@@ -1,0 +1,129 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: Roboto;
+}
+
+body {
+    line-height: 1;
+    font-size: 1.6rem; /* = 16px */
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 3.4rem; /* = 34px */
+    padding-bottom: 1rem;
+}
+
+h2 {
+    font-size: 2.0rem; /* = 20px */
+    padding-bottom: 6rem;
+}
+
+h3 {
+    padding-left: 3rem;
+    font-size: 1.6rem; /* = 18px */
+}
+
+h4, h5 {
+    font-size: 1.4rem; /* = 16px */
+}
+
+u {
+    text-decoration: none;
+    border-bottom: 0.2rem solid #03A9F4;
+}
+
+em {
+    color: #03A9F4;
+}
+
+.row {
+    display: flex;
+}
+
+.main_section {
+    padding-bottom: 1rem;
+    border-bottom: 0.2rem solid #03A9F4;
+}
+
+#loisirs {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2em;
+}
+
+@media (min-width:320px) { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+
+    body {
+        width: 80%;
+        margin: 0 auto;
+        padding: 2em;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #sidebar {
+        background-color: #03A9F4;
+    }
+    
+    img {
+        width: 150px;
+        height: 150px;
+        margin: auto;
+        padding: 3em;
+        display: block;
+        border-radius: 50%;
+    }
+    
+    .subsection {
+        display: block;
+        text-align: center;
+        color: #03A9F4;
+        background-color: #424242;
+        padding: 0.5em;
+    }
+    
+    .text-subsection {
+        text-align: justify;
+        padding: 2em;
+    }
+
+}
+
+@media (min-width:480px) { /* smartphones, Android phones, landscape iPhone */ 
+}
+
+@media (min-width:600px) { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ 
+}
+
+@media (min-width:801px) { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+@media (min-width:1281px) { /* hi-res laptops and desktops */ }
