@@ -10,105 +10,229 @@
   </head>
   
   <body>
-    <main id="main">
-      
-      <h1><em>Gabriele</em> F</h1>
-      <h2><u>Dével</u>oppeur web freelance</h2>
 
-      <div id="formation">
-        <div class="row main_section">
-          <i class="fas fa-graduation-cap"></i><h3>FORMATION</h3>
-        </div>
-        <div class="row">
-          <i class="far fa-dot-circle"></i><p class="date">2016 - 2017<br />Paris</p>
-        </div>
-        <div class="desc">
-          <h4>OPENCLASSROOMS</h4>
-          <h5>Junion Web Developer</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non consequat lectus. Nullam elementum eros eu justo iaculis facilisis. Vivamus porta tempor diam. Quisque malesuada mauris vitae ligula venenatis eleifend sed porttitor elit. Aenean vitae orci semper, scelerisque lorem eu, sagittis diam.</p>
-        </div>
-        <div class="date">2014 - 2016<br />Orléans</div>
-        <div class="desc">
-          <h4>UNIVERSITY OF LOREM</h4>
-          <h5>Graphic Designer</h5>
-          <p>Praesent fringilla accumsan tortor, nec laoreet nulla pretium cursus. Vestibulum eu ante turpis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nam posuere neque finibus metus vehicula, at rutrum ipsum vehicula. Nulla ac luctus dui, eu rhoncus mauris. Donec in commodo nisi.</p>
-        </div>
-      </div>
-      <div id="experience">
-        <h3>EXPERIENCE PROFESSIONNELLE</h3>
-        <div class="row">
-          <i class="far fa-dot-circle"></i><div class="date">Mars 2018 - Poste actuel<br />Paris</div>
-        </div>
-        <div class="desc">
-          <h4>DESIGN INC.</h4>
-          <h5>Web Developer</h5>
-          <p>Suspendisse consectetur sodales erat ac consectetur. Quisque gravida eleifend pellentesque. Donec ultrices varius sem sit amet viverra. Quisque vel maximus ligula. Praesent et velit at metus fermentum ornare. Sed et nulla a leo placerat cursus vitae eget ante.</p>
-        </div>
-        <div class="date">Mars 2018 - Poste actuel<br />Paris</div>
-        <div class="desc">
-          <h4>DESIGN INC.</h4>
-          <h5>Graphic Designer</h5>
-          <p>Etiam vitae quam nulla. Nam vitae nulla vitae dui convallis eleifend. Fusce faucibus ligula ac posuere iaculis. Morbi ac odio purus. Nulla pellentesque dui sit amet sapien pellentesque lobortis. Donec id iaculis purus. </p>
-        </div>
-        <div class="date">Mars 2018 - Poste actuel<br />Paris</div>
-        <div class="desc">
-          <h4>DESIGN INC.</h4>
-          <h5>Graphic Designer</h5>
-          <p>Suspendisse congue consequat ullamcorper. Cras sed enim dui. Fusce aliquam molestie ipsum quis egestas. Suspendisse libero dui, egestas sit amet turpis nec, accumsan scelerisque sapien.</p>
-        </div>
-      </div>
-      <div id="recommandations">
-        <h3>RECOMMANDATIONS</h3>
-        <div id="left">
-          <p>MAXIME KIEMAN<br />Directeur, Mon agence<br />Téléphone :<br />Email : name@email.com</p>
-        </div>
-        <div id="right">
-          <p>MAXIME KIEMAN<br />Directeur, Mon agence<br />Téléphone :<br />Email : name@email.com</p>
-        </div>
-      </div>
-    </main>
-    <div id="sidebar">
+    <aside>
 
-      <div id="portrait">
+      <figure>
         <img src="https://i.pinimg.com/originals/b0/90/3f/b0903fc3dfb148c5d4d40d0f6227d3a2.jpg" alt="Gabriele F"/>
-      </div>
+      </figure>
 
       <h3 class="subsection">CONTACT</h3>
-      <div class="text-subsection">
+      <address class="text-subsection">
         <p>
           Adresse<br />
           Paris, France
         </p><br />
         <p>
-          Téléphone<br />
-          06 00 00 00 00
-        </p><br />
-        <p>
           Email<br />
-          nom@email.com
+          gabrielluzzo@gmail.com
         </p><br />
         <p>
           Site Web<br />
           www.name.com
         </p><br />
         <p>
-          Skype<br />
-          @nom_dutilisateur
-      </div><br />
+          Twitter<br />
+          https://twitter.com/20Gabriele20
+        </p>
+      </address>
 
       <h3 class="subsection">A PROPOS DE MOI</h3>
       <div class="text-subsection">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non consequat lectus. Nullam elementum eros eu justo iaculis facilisis. Vivamus porta tempor diam. Quisque malesuada mauris vitae ligula venenatis eleifend sed porttitor elit. Aenean vitae orci semper, scelerisque lorem eu, sagittis diam. Praesent fringilla accumsan tortor, nec laoreet nulla pretium cursus. Vestibulum eu ante turpis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nam posuere neque finibus metus vehicula, at rutrum ipsum vehicula. Nulla ac luctus dui, eu rhoncus mauris. Donec in commodo nisi.</p>
       </div>
-
       
       <h3 class="subsection">LOISIRS</h3>
       <div id="loisirs">
         <i class="fas fa-laptop-code fa-3x"></i><i class="fas fa-guitar fa-3x"></i><i class="fas fa-jedi fa-3x"></i>
       </div>
 
-    </div>
-  
+    </aside>
+
+    <main>
+      
+      <h1><em>Gabriele</em> F</h1>
+      <h2><span id="u">Dével</span>oppeur web freelance</h2>
+
+      <section id="formation">
+        <header>
+          <span class="fas fa-graduation-cap"></span><h3>FORMATION</h3>
+        </header>
+        <hr>
+        <ul>
+          <li>
+            <div class="row">
+              <div class="date">
+                <p><span class="far fa-dot-circle"></span> 2020</p><p>Paris (France)</p>
+              </div>
+              <div class="desc">
+                <h4>OPENCLASSROOMS</h4>
+                <h5>Junion Web Developer</h5>
+                <ul>
+                  <li>
+                    Principales Matières:
+                  </li>
+                  <li>
+                    Front-End: HTML / CSS / Javascript
+                  </li>
+                  <li>
+                    Tools: Git / SEO
+                  </li>
+                  <li>
+                    Framework: Bootstrap
+                  </li>
+                  <li>
+                    Back-End: NodeJS / Express / MongoDB
+                  </li>
+                  <li>
+                    OWASP / API REST
+                  </li>
+                  <li>
+                    Database: MySQL / Vue.js
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="row">
+              <div class="date">
+                <p><span class="fas fa-circle fa-xs"></span> 2008 - 2009</p><p>Palerme (Italie)</p>
+              </div>
+              <div class="desc">
+                <h4>ARCES - Collegio Universitario</h4>
+                <h5>Administrateur Système - Developpeur</h5>
+                <ul>
+                  <li>
+                    Principales Matières:
+                  </li>
+                  <li>
+                    Droit du travail et les normes
+                  </li>
+                  <li>
+                    Suite Office (Word, Excel)
+                  </li>
+                  <li>
+                    Languages: HTML / CSS / PHP / SQL
+                  </li>
+                  <li>
+                    Cours de réparation des ordinateurs
+                  </li>
+                  <li>
+                    Cisco Systems IT Essentials: PC Hardware and Software<br />
+                    Certification CISCO System Associate (CCNA/CCDA)
+                  </li>
+                  <li>
+                    Attestation de qualification professionelle: Programmeur de Système 
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="row">
+              <div class="date">
+                <p><span class="fas fa-circle fa-xs"></span> 2003 - 2008</p><p>Palerme (Italie)</p>
+              </div>
+              <div class="desc">
+                <h4>Università degli Studi di Palermo</h4>
+                <h5>Ingénieur Informatique</h5>
+                <ul>
+                  <li>
+                    Principales Matières:
+                  </li>
+                  <li>
+                    Languages: C/C++, Java, Assembler
+                  </li>
+                  <li>
+                    Mathématique et Physique
+                  </li>
+                  <li>
+                    Gestion de données (SQL)
+                  </li>
+                  <li>
+                    Intelligence Artificielle
+                  </li>
+                  <li>
+                    Robotique
+                  </li>
+                  <li>
+                    Réalisation de modèles 3D (AutoCAD)
+                  </li>
+                  <li>
+                    Théorie et techniques de Programmation Web ( HTML / CSS / Javascript )
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section id="experience">
+        <header>
+          <span class="fas fa-briefcase"></span><h3>EXPERIENCE PROFESSIONNELLE</h3>
+        </header>
+        <hr>
+
+        <ul>
+          <li>
+            <div class="row">
+              <div class="date">
+                <p><span class="far fa-dot-circle"></span> 2019 - Présent</p><p>Chessy (France)</p>
+              </div>
+              <div class="desc">
+                <h4>Euro Disney Associes S.A.S.</h4>
+                <h5>Support Caisse / Vendeur Boutique (CDI)</h5>
+                <p>Complèxe DiscoveryLand<br />( StarTraders / Constellations )</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="row">
+              <div class="date">
+                <p><span class="fas fa-circle fa-xs"></span> 2017 - 2018</p><p>Chessy (France)</p>
+              </div>
+              <div class="desc">
+                <h4>Euro Disney Associes S.A.S.</h4>
+                <h5>Vendeur Photolocation (CDI)</h5>
+                <p>FantasyLand / DiscoveryLand<br />( Meet Mickey, Pavillon des Princesses, Starport )</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="row">
+              <div class="date">
+                <p><span class="fas fa-circle fa-xs"></span> Saison d'été 2017</p><p>Chessy (France)</p>
+              </div>
+              <div class="desc">
+                <h4>Euro Disney Associes S.A.S.</h4>
+                <h5>Vendeur Boutique (CDD)</h5>
+                <p>FantasyLand<br />( La confiserie des trois fées, Kiosque, Sir Mickey )</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section id="recommandations">
+        <header>
+          <span class="fas fa-pencil-alt"></span><h3>RECOMMANDATIONS</h3>
+        </header>
+        <hr>
+        <div class="row">
+          <div id="left">
+            <p>MAXIME KIEMAN<br />Directeur, Mon agence<br />Téléphone :<br />Email : name@email.com</p>
+          </div>
+          <div id="right">
+            <p>MAXIME KIEMAN<br />Directeur, Mon agence<br />Téléphone :<br />Email : name@email.com</p>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+
   
     <script src="https://kit.fontawesome.com/c6bde57d86.js" crossorigin="anonymous"></script>
   </body>

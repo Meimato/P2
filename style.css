@@ -44,19 +44,25 @@ h1 {
 
 h2 {
     font-size: 2.0rem; /* = 20px */
-    padding-bottom: 6rem;
+    padding-bottom: 3rem;
 }
 
 h3 {
     padding-left: 3rem;
-    font-size: 1.6rem; /* = 18px */
+    font-size: 1.6rem; /* = 16px */
 }
 
-h4, h5 {
-    font-size: 1.4rem; /* = 16px */
+h4, h5, h6 {
+    font-size: 1.4rem; /* = 14px */
 }
 
-u {
+h5 {
+    font-weight: normal;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+#u {
     text-decoration: none;
     border-bottom: 0.2rem solid #03A9F4;
 }
@@ -65,13 +71,22 @@ em {
     color: #03A9F4;
 }
 
+p{
+    text-align: justify;
+}
+
 .row {
     display: flex;
 }
 
-.main_section {
-    padding-bottom: 1rem;
-    border-bottom: 0.2rem solid #03A9F4;
+.fa-dot-circle, .fa-circle, .fa-graduation-cap, .fa-briefcase, .fa-pencil-alt {
+    color: #03A9F4;
+}
+
+hr {
+    width: 100%;
+    margin-bottom: 3rem;
+    color: #03A9F4;
 }
 
 #loisirs {
@@ -83,20 +98,19 @@ em {
 @media (min-width:320px) { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
 
     body {
-        width: 80%;
+        width: 90%;
         margin: 0 auto;
-        padding: 2em;
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
     
-    #sidebar {
+    aside {
         background-color: #03A9F4;
     }
     
     img {
-        width: 150px;
-        height: 150px;
+        width: 190px;
+        height: 190px;
         margin: auto;
         padding: 3em;
         display: block;
@@ -116,14 +130,80 @@ em {
         padding: 2em;
     }
 
+    header {
+        display: flex;
+        padding-top: 2rem;
+        align-items: center;
+    }
+
+    .row {
+        flex-direction: column;
+        padding-bottom: 0.5rem;
+    }
+
+    .date {
+        display: flex;
+        font-weight: bold;
+    }
+
+    h1 {
+        padding-top: 2rem;
+    }
+
+    p {
+        padding-left: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    li {
+        padding-bottom: 1rem;
+    }
+
 }
 
-@media (min-width:480px) { /* smartphones, Android phones, landscape iPhone */ 
-}
+@media (min-width:768px) { /* tablet, landscape iPad, lo-res laptops ands desktops */ 
 
-@media (min-width:600px) { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ 
-}
+    body {
+        margin: 0;
+        padding: 0;
+        flex-direction: row;
+    }
 
-@media (min-width:801px) { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
-@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
-@media (min-width:1281px) { /* hi-res laptops and desktops */ }
+    aside {
+        max-width: 28rem;
+    }
+
+    main {
+        padding-left: 3rem;
+    }
+}
+@media (min-width:991px) { /* big landscape tablets, laptops, and desktops */ 
+
+    body {
+        margin: 0 auto;
+    }
+
+    main {
+        max-width: 80rem;
+    }
+
+    .date {
+        min-width: 50%;
+        flex-direction: column;
+    }
+
+    .row {
+        flex-direction: row;
+    }
+
+    #left {
+        width: 50%;
+    }
+
+    
+
+}
+@media (min-width:1199px) { /* hi-res laptops and desktops */ 
+
+
+}
