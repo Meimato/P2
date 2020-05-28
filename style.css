@@ -1,3 +1,7 @@
+/*************/
+/* CSS Reset */
+/*************/
+
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
     padding: 0;
     margin: 0;
@@ -5,7 +9,11 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     font: inherit;
     vertical-align: baseline;
 }
+
+/***********************************************/
 /* HTML5 display-role reset for older browsers */
+/***********************************************/
+
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
     display: block;
 }
@@ -33,23 +41,28 @@ blockquote:before, blockquote:after, q:before, q:after {
     content: none;
 }
 
+/*****************/
+/* HTML Headings */
+/*****************/
+
 h1, h2, h3, h4, h5, h6, aside, .date {
     font-weight: bolder;
 }
 
 h1 {
-    font-size: 3.4rem; /* = 34px */
+    font-size: 3.6rem; /* = 36px */
     padding-bottom: 1rem;
 }
 
 h2 {
-    font-size: 2.5rem; /* = 25px */
+    font-size: 3.0rem; /* = 30px */
     padding-bottom: 3rem;
+    line-height: 4rem;
 }
 
 h3 {
     padding-left: 3rem;
-    font-size: 2.0rem; /* = 20px */
+    font-size: 2.4rem; /* = 24px */
 }
 
 h4{
@@ -62,41 +75,15 @@ h5, h6 {
 
 h5 {
     font-weight: normal;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding: 1rem 0 1rem 0;
 }
 
-#u {
-    text-decoration: none;
-    border-bottom: 0.2rem solid #feca07;
-}
-
-em {
-    color: #feca07;
-}
+/************/
+/* Elements */
+/************/
 
 .row {
     display: flex;
-}
-
-.fa-dot-circle, .fa-circle, .fa-graduation-cap, .fa-briefcase, .fa-pencil-alt {
-    color: #feca07;
-    padding-right: 1rem;
-}
-
-.fa-stack > .fa-circle {
-    color: #404040;
-}
-
-.fa-stack {
-    color: #404040;
-    font-size: 2.5rem;
-}
-
-hr {
-    width: 100%;
-    margin-bottom: 3rem;
-    color: #feca07;
 }
 
 #loisirs {
@@ -105,17 +92,55 @@ hr {
     padding: 2em;
 }
 
-@media (min-width:320px) { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+hr {
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+.fa-dot-circle, .fa-circle, .fa-graduation-cap, .fa-briefcase, .fa-pencil-alt {
+    padding-right: 1rem;
+}
+
+.fa-stack {
+    font-size: 2.5rem;
+}
+
+/**********/
+/* Colors */
+/**********/
+
+em, hr, .subsection, .fa-dot-circle, .fa-circle, .fa-graduation-cap, .fa-briefcase, .fa-pencil-alt {
+    color: #feca07;
+}
+
+aside {
+    background-color: #feca07;
+}
+
+#u {
+    text-decoration: none;
+    border-bottom: 0.2rem solid #feca07;
+}
+
+.fa-stack, .fa-stack > .fa-circle {
+    color: #404040;
+}
+
+.subsection {
+    background-color: #404040;
+}
+
+/*******************************************************************/
+/* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+/*******************************************************************/
+
+@media (min-width:320px) { 
 
     body {
         width: 90%;
         margin: 0 auto;
         display: flex;
         flex-direction: column-reverse;
-    }
-    
-    aside {
-        background-color: #feca07;
     }
     
     img {
@@ -130,8 +155,6 @@ hr {
     .subsection {
         display: block;
         text-align: center;
-        color: #feca07;
-        background-color: #404040;
         padding: 0.5em;
     }
     
@@ -158,9 +181,12 @@ hr {
         padding-top: 2rem;
     }
 
-    p {
+    h3 {
         padding-left: 1rem;
-        padding-bottom: 1rem;
+    }
+
+    p {
+        padding: 0 0 1rem 1rem;
     }
 
     li {
@@ -169,7 +195,11 @@ hr {
 
 }
 
-@media (min-width:768px) { /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+/********************************************************/
+/* tablet, landscape iPad, lo-res laptops ands desktops */ 
+/********************************************************/
+
+@media (min-width:768px) { 
 
     body {
         margin: 0;
@@ -185,7 +215,12 @@ hr {
         padding-left: 3rem;
     }
 }
-@media (min-width:991px) { /* big landscape tablets, laptops, and desktops */ 
+
+/************************************************/
+/* big landscape tablets, laptops, and desktops */ 
+/************************************************/
+
+@media (min-width:991px) {
 
     body {
         margin: 0 auto;
@@ -207,11 +242,5 @@ hr {
     #left {
         width: 50%;
     }
-
-    
-
-}
-@media (min-width:1199px) { /* hi-res laptops and desktops */ 
-
 
 }
