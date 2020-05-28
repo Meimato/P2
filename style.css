@@ -81,6 +81,15 @@ em {
     padding-right: 1rem;
 }
 
+.fa-stack > .fa-circle {
+    color: #404040;
+}
+
+.fa-stack {
+    color: #404040;
+    font-size: 2.5rem;
+}
+
 hr {
     width: 100%;
     margin-bottom: 3rem;
