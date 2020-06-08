@@ -110,16 +110,16 @@ hr {
 /**********/
 
 em, hr, .subsection, .fa-dot-circle, .fa-circle, .fa-graduation-cap, .fa-briefcase, .fa-pencil-alt {
-    color: #feca07;
+    color: #4DB6AC;
 }
 
 aside {
-    background-color: #feca07;
+    background-color: #4DB6AC;
 }
 
 #u {
     text-decoration: none;
-    border-bottom: 0.2rem solid #feca07;
+    border-bottom: 0.2rem solid #4DB6AC;
 }
 
 .fa-stack, .fa-stack > .fa-circle {
