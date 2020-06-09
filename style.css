@@ -105,6 +105,21 @@ hr {
     font-size: 2.5rem;
 }
 
+
+footer {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-items: flex-end;
+}
+
+#bottom {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: flex-end;
+}
+
 /**********/
 /* Colors */
 /**********/
@@ -209,6 +224,8 @@ aside {
 
     aside {
         max-width: 28rem;
+        display: flex;
+        flex-direction: column;
     }
 
     main {
