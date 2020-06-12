@@ -82,6 +82,10 @@ h5 {
 /* Elements */
 /************/
 
+.underlined, a {
+    text-decoration: none;
+}
+
 .row {
     display: flex;
 }
@@ -134,13 +138,16 @@ aside, hr {
     background-color: #4DB6AC;
 }
 
-#u {
-    text-decoration: none;
+.underlined {
     border-bottom: 0.2rem solid #4DB6AC;
 }
 
-.fa-stack, .fa-stack > .fa-circle {
+.fa-stack, .fa-stack > .fa-circle, a, a:visited {
     color: #404040;
+}
+
+a:hover {
+    color: white;
 }
 
 .subsection {
@@ -172,11 +179,12 @@ aside, hr {
     .subsection {
         display: block;
         text-align: center;
-        padding: 0.5em;
+        padding: 1.2rem;
     }
     
     .text-subsection {
-        padding: 2em;
+        padding: 2rem;
+        text-align: justify;
     }
 
     header {
