@@ -187,6 +187,10 @@ a:hover {
         text-align: justify;
     }
 
+    .text-subsection > p {
+        padding: 0 0 1rem 0;
+    }
+
     header {
         display: flex;
         padding-top: 2rem;
