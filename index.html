@@ -57,7 +57,7 @@
         <div>
           <h3 class="subsection">A PROPOS DE MOI</h3>
           <div class="text-subsection">
-            <p>Gabriele Ferro est un Développeur Web Freelance et un Cast Member à Disneyland Paris.</p><p>Avant de rejoindre l'équipe de Disney, Gabriele a passé toute sa vie devant l'ordinateur.</p><p>Gabriele est une personne très curieuse et il aime apprendre des nouvelle choses chaque jours.</p>
+            <p>Gabriele est un Développeur Web Freelance et un Cast Member à Disneyland Paris.</p><p>Avant de rejoindre l'équipe de Disney, Gabriele a passé toute sa vie devant l'ordinateur.</p><p>Gabriele est une personne très curieuse et il aime apprendre des nouvelle choses chaque jours.</p>
           </div>
         </div>
         
@@ -266,8 +266,18 @@
 
     </main>
 
-
-  
     <script src="https://kit.fontawesome.com/c6bde57d86.js" crossorigin="anonymous"></script>
+
+    <script type="module">
+      // This is the "Offline page" service worker
+
+      // Add this below content to your HTML page inside a <script type="module"></script> tag, or add the js file to your page at the very top to register service worker
+
+      import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
+
+      const el = document.createElement('pwa-update');
+      document.body.appendChild(el);
+    </script>
+
   </body>
 </html>
